@@ -45,35 +45,35 @@ b)npm start (frontend)
 
 
 🧱 Tech Stack
-Frontend:
+1)Frontend:
 
-React.js
+ React.js
 
-Axios
+ Axios
 
-React Router DOM
+ React Router DOM
 
 
-Backend:
+2)Backend:
 
-Node.js
+ Node.js
 
-Express.js
+ Express.js
 
-MongoDB with Mongoose
+ MongoDB with Mongoose
 
-CORS
+ CORS
 
-Body-parser
+ Body-parser
 
 
 Tools:
 
-MongoDB Compass
+ MongoDB Compass
 
-VS Code
+ VS Code
 
-Git & GitHub
+ Git & GitHub
 
 
 👨‍💻 Author
