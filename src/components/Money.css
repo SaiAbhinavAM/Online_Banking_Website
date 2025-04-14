@@ -1,0 +1,177 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0072b1, #003366); /* Modern gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Money Container */
+.money-container {
+    background: #ffffff;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Header Styling */
+.money-container h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Balance Display */
+.money-container p {
+    font-size: 1.2em;
+    color: #0072b1;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.money-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #0072b1;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #003366;
+    background-color: #f0f8ff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+.money-container input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.3);
+    outline: none;
+}
+
+/* Button Styling */
+.money-container button {
+    width: 100%;
+    padding: 12px;
+    background: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+/* Button Hover Effect */
+.money-container button:hover {
+    background: #005580;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Message Styling */
+.money-container p {
+    text-align: center;
+}
+
+.money-container .message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Success and Error Messages */
+.money-container .message.success {
+    color: #006600;
+    background: #e6ffe6;
+}
+
+.money-container .message.error {
+    color: #cc0000;
+    background: #ffe6e6;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .money-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .money-container h2 {
+        font-size: 1.5em;
+    }
+
+    .money-container input {
+        font-size: 0.9em;
+    }
+
+    .money-container button {
+        font-size: 1em;
+    }
+}
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 10px;
+    flex-grow: 1; /* Take up remaining space */
+    margin-top: 20px; /* Add some space below the header */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff; /* White background */
+    padding: 10px; /* Reduce padding for a compact design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a box effect */
+    border-radius: 10px; /* Rounded corners */
+    position: fixed; /* Position at the top left */
+    top: 0;
+    left: 0;
+    width: 10px; /* Decreased width of the sidebar */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing between links */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #003366;
+    color: #fff;
+}
+

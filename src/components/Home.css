@@ -1,0 +1,161 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5; /* Soft gray background for a modern look */
+}
+
+/* App Container */
+.App {
+    text-align: center;
+    color: #444;
+    padding-top: 20px;
+}
+
+/* Services Section */
+.services-section {
+    background: linear-gradient(135deg, #6a0dad 30%, #8a2be2 100%);
+    color: #fff;
+    padding: 60px 20px;
+    border-radius: 0 0 50px 50px;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Container */
+.services {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Service Card Styling */
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    width: 240px;
+    height: 280px; /* Fixed height for uniformity */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Icon Animation */
+.service-card .icon {
+    font-size: 45px;
+    color: #6a0dad;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .icon {
+    color: #8a2be2;
+    transform: scale(1.2);
+}
+
+/* Service Card Content */
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.service-card p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Hover Effects */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Highlight Line */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #6a0dad, #8a2be2);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover::before {
+    transform: scaleY(1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #6a0dad;
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50px 50px 0 0;
+    margin-top: 50px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f0f2f5;
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .services-section {
+        padding: 40px 10px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
+

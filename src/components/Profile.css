@@ -1,0 +1,171 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Use column layout for the header and main content */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header */
+.header {
+    background-color: #003366;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 10px;
+    flex-grow: 1; /* Take up remaining space */
+    margin-top: 20px; /* Add some space below the header */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff; /* White background */
+    padding: 10px; /* Reduce padding for a compact design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a box effect */
+    border-radius: 10px; /* Rounded corners */
+    position: fixed; /* Position at the top left */
+    top: 0;
+    left: 0;
+    width: 10px; /* Decreased width of the sidebar */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing between links */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #003366;
+    color: #fff;
+}
+
+/* Profile Container */
+.profile-container {
+    margin: 20px;
+    padding: 20px;
+    width: 400px; /* Adjust width considering sidebar width */
+    height: 80vh;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeInUp 0.8s ease-in-out;
+    margin-left: 270px; /* Adjust for sidebar width */
+}
+
+.profile-header {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.profile-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Balance Box */
+.balance-box {
+    flex: 0.5;
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-left: 5px solid #003366;
+    border-radius: 5px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.balance-box h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.balance-amount {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Hover Animation */
+.balance-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 2000px) {
+    .profile-details {
+        flex-direction: column;
+    }
+
+    .balance-box {
+        margin-top: 10px;
+    }
+
+    .main-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    .sidebar {
+        width: 20%;
+        height: 100%;
+    }
+
+    .profile-container {
+        width: 200%;
+        margin-left: 0;
+    }
+}
+
+

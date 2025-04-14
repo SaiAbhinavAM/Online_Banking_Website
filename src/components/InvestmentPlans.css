@@ -1,0 +1,197 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Investment Plans Container */
+.investment-plans-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.intro-text {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Investment Plan Cards */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.investment-plan-card {
+  background: #700d2b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.investment-plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.plan-tag {
+  background: #6a0dad;
+  color: #000000;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Card Body */
+.card-body p {
+  font-size: 16px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.card-body strong {
+  color: #000000;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.4s, transform 0.2s;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading & Error States */
+.loading {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-message {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .investment-plans-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .investment-plan-card {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+.plans-grid .investment-plan {
+  color: #0000ff; /* Sets text color to blue */
+}
+
+.plans-grid .investment-plan h3 {
+  color: #0000ff; /* Ensures headings are blue */
+}
+
+.plans-grid .investment-plan strong {
+  color: #0000ff; /* Makes strong text blue */
+}
+
+.plans-grid .investment-plan .description {
+  color: #0000ff; /* Ensures description is blue */
+}
+
+.plans-grid .investment-plan .invest-button {
+  color: white; /* Keeps button text white */
+}
+input,
+textarea {
+  color: #0000ff; /* Blue text color for input content */
+  background-color: #ffffff; /* White background for visibility */
+  border: 1px solid #cccccc; /* Light gray border for clarity */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999; /* Placeholder text color */
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Highlighted border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+  

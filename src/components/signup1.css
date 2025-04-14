@@ -1,0 +1,138 @@
+/* Background Styling */
+body {
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 200%;
+    margin: 20px;
+    border: 2px solid #e0c3fc;
+}
+
+/* Header Styling */
+.signup h1 {
+    color: #333;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    background: linear-gradient(90deg, #6c63ff, #b289ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Form Styling */
+.signup form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Input & Select Styling */
+.signup input,
+.signup select {
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1.05em;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Focus Effects */
+.signup input:focus,
+.signup select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Button Styling */
+.signup button {
+    padding: 14px;
+    width: 100%; /* Set button width to 100% */
+    background: linear-gradient(90deg, #6c63ff, #b289ff);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    font-family: inherit;
+}
+
+.signup button:hover {
+    background: linear-gradient(90deg, #5a54e6, #9b72e6);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(108, 99, 255, 0.4);
+}
+
+.signup button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Placeholder Styling */
+.signup input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Select Styling for Dropdowns */
+.signup select {
+    color: #555;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23555" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Form Spacing and Layout */
+.signup input,
+.signup select {
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+    .signup {
+        padding: 25px;
+    }
+    .signup h1 {
+        font-size: 1.8em;
+    }
+    .signup input,
+    .signup select {
+        padding: 12px;
+        font-size: 1em;
+    }
+    .signup button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+

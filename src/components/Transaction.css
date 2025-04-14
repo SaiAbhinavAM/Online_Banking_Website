@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #003366, #006699); /* Gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Transaction Container */
+.transaction-container {
+    background: #ffffff; /* White background for the card */
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    animation: fadeIn 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+.transaction-container h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Balance Display */
+.transaction-container p {
+    font-size: 1.2em;
+    color: #006699;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.transaction-container label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #003366;
+}
+
+.transaction-container input,
+.transaction-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #006699;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+/* Input Field Focus Effect */
+.transaction-container input:focus,
+.transaction-container select:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+
+/* Button Styling */
+.transaction-container button {
+    width: 100%;
+    padding: 12px;
+    background: #003366; /* Dark blue button */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+/* Button Hover Effect */
+.transaction-container button:hover {
+    background: #005580; /* Lighter blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Message Styling */
+.transaction-container p {
+    text-align: center;
+}
+
+.transaction-container .message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.transaction-container .message.success {
+    color: #006600; /* Green text for success */
+    background: #e6ffe6; /* Light green background */
+}
+
+.transaction-container .message.error {
+    color: #cc0000; /* Red text for error */
+    background: #ffe6e6; /* Light red background */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .transaction-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .transaction-container h2 {
+        font-size: 1.5em;
+    }
+
+    .transaction-container input,
+    .transaction-container select {
+        font-size: 0.9em;
+    }
+
+    .transaction-container button {
+        font-size: 0.9em;
+    }
+}

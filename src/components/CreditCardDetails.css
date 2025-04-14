@@ -1,0 +1,172 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #28313b, #485461); /* Dark gradient background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Credit Card Container */
+.credit-card-container {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Header Styling */
+.credit-card-container h2 {
+    color: #e0e0e0;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styling */
+.credit-card-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.credit-card-container input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.credit-card-container input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.4);
+    border: 1px solid #00c4cc;
+}
+
+/* Read-Only Input Field */
+.credit-card-container input[readonly] {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+    color: #b3b3b3;
+}
+
+/* Label Styling */
+.credit-card-container label {
+    color: #d1d1d1;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Button Styling */
+.credit-card-container button {
+    background: #00c4cc;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.credit-card-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.credit-card-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Message Styling */
+.credit-card-container p {
+    font-size: 1em;
+    color: #ffd700;
+    margin-top: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .credit-card-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .credit-card-container h2 {
+        font-size: 1.5em;
+    }
+
+    .credit-card-container button {
+        font-size: 0.9em;
+    }
+}
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 10px;
+    flex-grow: 1; /* Take up remaining space */
+    margin-top: 20px; /* Add some space below the header */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #ffffff; /* White background */
+    padding: 10px; /* Reduce padding for a compact design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a box effect */
+    border-radius: 10px; /* Rounded corners */
+    position: fixed; /* Position at the top left */
+    top: 0;
+    left: 0;
+    width: 10px; /* Decreased width of the sidebar */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing between links */
+}
+
+/* Sidebar Links */
+.sidebar a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #003366;
+    color: #fff;
+}
+
