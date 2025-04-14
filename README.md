@@ -34,11 +34,15 @@ b)mongo.js
 3) Run the Application
 
 a)nodemon app.js(backend)
+
 b)npm start (frontend)
+
 
 4) Open http://localhost:3000 in browser
 
 5) In mongo.js file, use appropriate connection string
+
+
 
 🧱 Tech Stack
 Frontend:
@@ -49,22 +53,33 @@ Axios
 
 React Router DOM
 
+
 Backend:
 
 Node.js
+
 Express.js
+
 MongoDB with Mongoose
+
 CORS
+
 Body-parser
 
+
 Tools:
+
 MongoDB Compass
+
 VS Code
+
 Git & GitHub
 
 
 👨‍💻 Author
+
 Sai Abhinav
+
 📬 GitHub
 
 
