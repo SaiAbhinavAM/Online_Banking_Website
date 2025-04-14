@@ -19,6 +19,18 @@ that allows users to register, log in, view their account balance, transfer fund
 - Node.js (v14+)
 - MongoDB Compass
 
+
+----------DEMO---------
+
+
+
+https://github.com/user-attachments/assets/ae21b200-d22a-4131-99fb-c409ff87a32d
+
+
+
+
+
+
 # Installation:
 1) Install backend dependencies:
 
