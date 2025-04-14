@@ -40,4 +40,29 @@ b)npm start (frontend)
 
 5) In mongo.js file, use appropriate connection string
 
+🧱 Tech Stack
+Frontend:
+
+React.js
+Axios
+React Router DOM
+
+Backend:
+
+Node.js
+Express.js
+MongoDB with Mongoose
+CORS
+Body-parser
+
+Tools:
+MongoDB Compass
+VS Code
+Git & GitHub
+
+
+👨‍💻 Author
+Sai Abhinav
+📬 GitHub
+
 
